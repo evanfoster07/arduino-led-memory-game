@@ -21,12 +21,13 @@ Incorrect input resets the game and the user recieves a lose message, while succ
 - Breadboard and jumper wires
 
 ## How it Works
+- The player is prompted for their desired sequence length via the Serial Monitor.
 - The LED sequence is stored in a fixed-size array.
 - Each round adds a new randomly generated value (1-3). 
 - The full sequence is flashed via LEDs corresponding to values 1, 2, or 3.
 - User input is read by the Serial Monitor and validated step-by-step.
 - Both incorrect input and completion reset the game state.
-- User is informed of win or loss conditions through Serial output.
+- User is informed of win or loss conditions through Serial output and LED flashing.
 
 ## How to Run
 1. Clone this repository.
