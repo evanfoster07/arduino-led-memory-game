@@ -35,7 +35,7 @@ Incorrect input resets the game and the user recieves a lose message, while succ
 
 - Three LEDS connected to pins 2, 3, and 4 through 220Ω current-limiting resistors to ground.
 
-## LED Mapping
+### LED Mapping
 - 1 -> Yellow LED (Pin 2)
 - 2 -> Red LED (Pin 3)
 - 3 -> Blue LED (Pin 4)
