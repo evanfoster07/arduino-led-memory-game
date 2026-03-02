@@ -47,3 +47,11 @@ Incorrect input resets the game and the user recieves a lose message, while succ
 4. Upload the sketch to your Arduino board.
 5. Open the Serial Monitor (9600 baud).
 6. Enter LED sequence values one at a time.
+
+## Design Decisions
+The system was structured using modular functions to separate sequence generation, user input handling, and LED control. This improved readability and made debugging easier as the
+project grew. An array was used to store the generated sequence, with bounds checking to prevent overflow as the difficulty increased.
+
+## Debugging & Iteration
+During development, I encountered timing inconsistencies in user input detection due to blocking delays and bugs in Serial input handling. I refactored the logic to reduce 
+unnecessary delays, and implemented input validation and a blocking wait loop for the Serial Monitor interface. I also later restructured the code into a simple object-oriented architecture to make the code easier to extend and maintain as features are added.
